@@ -1,0 +1,221 @@
+.cv-container {
+    display: grid;
+    border-top: 15px solid var(--main-color);
+    border-bottom: 15px solid var(--main-color);
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    background-color:  rgba(245, 245, 245, 0.702)!important;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/21 !important;
+    grid-row: 11/19 !important;
+}
+
+.cv-preview {
+    display: grid;
+    background-color: rgba(245, 245, 245, 0.518);
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    justify-self: center !important;
+    max-width: 2500px !important;
+    width: 80vw;
+    grid-row: 2/20;
+    grid-column: 9/13;
+    height: 100%;
+}
+
+.cv-head {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    background-color: #2a2a2e;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/21;
+    grid-row: 1/5;
+}
+
+.cv-head-h1 {
+    font-size: 80px;
+    top: 20px !important;
+    grid-column: 1/21 !important;
+    grid-row: 6 !important;
+    justify-content: center;
+}
+
+.cv-head-h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--main-color);
+    grid-column: 1/21;
+    grid-row: 10;
+}
+
+.cv-head-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-orientation: sideways-right;
+    writing-mode: vertical-rl;    
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 100;
+    grid-column: 19/20;
+    grid-row: 1/21;
+}
+
+.cv-side {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    background-color: #2a2a2e49;
+    grid-column: 1/8;
+    grid-row: 5/21;
+}
+
+.side-details {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    grid-column: 3/19;
+    grid-row: 3/10;
+}
+
+.side-header {
+    display: flex;
+    grid-column: 1/21;
+    grid-row: 1/4;
+    justify-content: center;
+    align-content: flex-end;
+    border-bottom: 5px solid #2a2a2e;
+}
+
+.side-main {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-column: 1/21;
+    grid-row: 4/21;
+}
+
+.details-address {
+    grid-column: 1/21;
+    grid-row: 1/10;
+    font-size: 25px;
+    font-weight: 500;
+    overflow-wrap: break-word !important;
+}
+
+.details-phone {
+    grid-column: 1/21;
+    grid-row: 9/13;
+    align-content: center !important;
+    font-size: 25px;
+    font-weight: 500;
+    overflow-wrap: break-word !important;
+}
+
+.details-email {
+    width: 100%;
+    height: 100%;
+    overflow-wrap: break-word !important;
+    grid-column: 1/21;
+    grid-row: 14/21;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.cv-main {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(auto-fill, 150px);
+    grid-template-areas: 
+                "exp";
+    grid-column: 8/21;
+    grid-row: 5/20;
+}
+
+.cv-main-experience {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    grid-column: 1/21;
+
+}
+
+.p1 {
+    display: grid;
+    grid-column: 2/20;
+    grid-row: 6 !important;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.p2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: flex-start;
+    grid-column: 2/20;
+    grid-row: 9;
+}
+
+.p3 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: flex-start;
+    grid-column: 2/20;
+    grid-row: 12;
+}
+
+.cv-main-experience > h2 {
+    grid-column: 2/21;
+    text-align: left;
+    width: 100%;
+}
+
+.cv-main-education {
+    grid-column: 1/21;
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+}
+
+.eduH2 {
+    font-size: 25px;
+    font-weight: 800;
+    text-align: left;
+    grid-column: 2/21 !important;
+    grid-row: 1;
+}
+
+.eduP1 {
+    text-align: left;
+    grid-column: 2/21;
+    grid-row: 6;
+}
+
+.eduP2 {
+    text-align: left;
+    grid-column: 2/21;
+    grid-row: 9;
+}
+
+.eduP3 {
+    text-align: left;
+    grid-column: 2/21;
+    grid-row: 12;
+}
+
+.eduP4 {
+    text-align: left;
+    grid-column: 2/21;
+    grid-row: 15;
+}
+
+.cv-preview-h1 {
+    color: black !important;
+}

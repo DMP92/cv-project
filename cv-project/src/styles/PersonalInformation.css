@@ -1,0 +1,120 @@
+.form-head {
+    display: grid;
+    height: 350px;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+    grid-column: 1/21;
+    grid-row: 2;
+    position: relative;
+    top: 55px;
+    border-top: 7px solid var(--main-color);
+}
+
+.form-head > div > input {
+    margin-top: 8px;
+    outline: 1px solid rgba(245, 245, 245, 0.593);
+    border: 1px solid rgba(245, 245, 245, 0.593);
+    border-radius: 1;
+    background-color: transparent;
+    width: 100% !important;
+    height: 35px;
+    color: white;
+    /* 3c44b1*/
+}
+
+.form-head > div > input:focus {
+    outline: 1px solid var(--main-color) !important;
+    border: 1px solid var(--main-color) !important;
+    color: var(--main-color);
+}
+
+.headFName {
+    display: grid;
+    grid-template-areas: 
+            "label"
+            "input";
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-column: 1/11;
+    grid-row: 1/2;
+    width: 95%;
+    height: 60px;
+}
+
+.firstName {
+    width: 100% !important;
+    grid-column: 1/2;
+}
+
+.headLName {
+    display: grid;
+    grid-template-areas: 
+            "label"
+            "input";
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-column: 11/21;
+    grid-row: 1/2;
+    width: 100%;
+    height: 60px;
+}
+
+.lastname {
+    grid-area: "input";
+    grid-column: 1/2;
+    width: 100% !important;
+}
+
+.headProfession {
+    display: grid;
+    grid-template-areas: 
+            "label"
+            "input";
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: 50% 50%;
+    grid-column: 1/21;
+    grid-row: 6/9;
+    align-self: center;
+    width: 100% !important;
+    height: 60px;
+}
+
+.profession {
+    grid-area: "input";
+    grid-column: 1/21 !important;
+}
+
+.city {
+    grid-column: 1/10;
+    grid-row: 10/11;
+    align-self: flex-start;
+}
+
+
+.state {
+    justify-self: center;
+    grid-row: 10;
+    width: 80% !important;
+    grid-column: 10/15;
+}
+
+.state > input.stateName {
+    width: 100% !important;
+}
+
+.zip {
+    width: 100%;
+    grid-column: 15/21;
+    grid-row: 10;
+}
+
+.phone {
+    width: 95% !important;
+    grid-column: 1/11;
+    grid-row: 15;    
+}
+
+.email {
+    grid-column: 11/21 !important;
+    grid-row: 15 !important;
+}
